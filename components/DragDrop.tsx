@@ -12,7 +12,7 @@ const initialItems = [
 export const DragDrop: React.FC = () => {
   const [items, setItems] = React.useState(initialItems);
 
-  const onDragEnd = (result) => {
+  const onDragEnd = (result: any) => {
     if (!result.destination) return;
 
     const newItems = Array.from(items);
